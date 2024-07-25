@@ -9,3 +9,5 @@ altair==4
 tiktoken==0.4.0
 sentence-transformers
 transformers
+langchain_community
+langchain_core
