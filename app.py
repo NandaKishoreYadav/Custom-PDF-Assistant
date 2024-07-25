@@ -42,7 +42,10 @@ else:
         st.session_state.chat_history = response['chat_history']
 
     for i, message in enumerate(st.session_state.chat_history):
-        if i % 2 == 0:
+        if len(st.session_state.chat_history) == 1:
+            with st.chat_message("AI",avatar='imgs/ai.png'):
+                st.write(message.content)
+        elif i % 2 == 0:
             with st.chat_message("Human",avatar='imgs/human.png'):
                 st.write(message.content)
         else:
