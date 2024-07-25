@@ -11,6 +11,8 @@ Custom PDF Assistant is a tool that leverages the open-source Google PaLM LLM to
 
 You can access the live demo of the application [here](https://custom-pdf-assistant.streamlit.app/).
 
+![Custom PDF Assistant](imgs/upload.png)
+
 ## Installation
 
 ### Prerequisites
@@ -24,7 +26,7 @@ You can access the live demo of the application [here](https://custom-pdf-assist
     ```sh
     git clone https://github.com/NandaKishoreYadav/Custom-PDF-Assistant.git
     ```
-2. Obtain your Google PaLM API key from [Google AI Studio](https://aistudio.google.com/app/apikey) and paste it in the `.env` file. If you prefer to use OpenAI, obtain an API key from OpenAI and use it (note that it will incur costs).
+2. Obtain your Google PaLM API key for free from [Google AI Studio](https://aistudio.google.com/app/apikey) and paste it in the `.env` file. If you prefer to use OpenAI, obtain an API key from OpenAI and use it.
 
 3. Open a command prompt from the project directory and create a new virtual environment:
     ```sh
@@ -51,6 +53,11 @@ You can access the live demo of the application [here](https://custom-pdf-assist
 ## Usage
 
 Once the application is running, you can upload a PDF file and start querying its content. The system will convert the PDF into embeddings and use the FAISS vector database to retrieve answers based on your queries.
+
+### Note
+
+Sometimes the prompts may give errors due to the use of the open-source model. If you encounter such issues, change the prompt and try again; it should work fine.
+
 
 ## Contact
 
