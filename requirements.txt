@@ -2,6 +2,7 @@ langchain
 PyPDF2
 python-dotenv
 streamlit
+InstructorEmbedding
 google-generativeai
 langchain-google-genai
 faiss-cpu
